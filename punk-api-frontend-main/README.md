@@ -14,6 +14,12 @@ This site uses the following languages, principles & softwares:
 - jest
 # use sandbox : 
 I had a problem on my professional pc so I had to create the code online via sandbox and linked it to github
+
+
+# time: 
+
+I spent between 4 and 5 HOURS FOR the realization
+
 ## Available Scripts
 
 In the project directory, you can run:
