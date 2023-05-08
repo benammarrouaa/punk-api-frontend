@@ -1,0 +1,44 @@
+@use "/src/Style/scss/mixins" as *;
+@use "/src/Style/scss/variables" as *;
+
+.beers__card {
+  background-color: white;
+  border: 1px solid #9ca8bd;
+  border-radius: 20px;
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  text-align: center;
+  color: #222831;
+  transition: 500ms ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    background-color: #f3a40f;
+  }
+
+  &__img {
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #ffd369;
+    font-size: 1.1rem;
+  }
+  &__span {
+    color: #222831;
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  &__tagline {
+    color: #222831;
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+}

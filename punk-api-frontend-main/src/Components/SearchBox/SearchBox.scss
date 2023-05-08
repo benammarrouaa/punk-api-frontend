@@ -1,0 +1,31 @@
+@use "/src/Style/scss/mixins" as *;
+@use "/src/Style/scss/variables" as *;
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #f3a40f;
+    width: 65%;
+    padding: 15px;
+
+    @include mobile {
+      width: 95%;
+      padding: 20px;
+    }
+
+    @include tablet {
+      width: 90%;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

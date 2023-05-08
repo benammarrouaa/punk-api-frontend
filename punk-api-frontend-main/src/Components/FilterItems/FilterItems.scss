@@ -1,0 +1,29 @@
+@use "/src/Style/scss/mixins" as *;
+@use "/src/Style/scss/variables" as *;
+
+.filtersList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__filter {
+    margin: 0 10px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #9ca8bd;
+    border-radius: 5px;
+
+    @include mobile {
+      padding: 10px;
+    }
+
+    label {
+      margin-left: 5px;
+    }
+  }
+}

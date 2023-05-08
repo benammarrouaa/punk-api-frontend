@@ -1,0 +1,45 @@
+@use "/src/Style/scss/mixins" as *;
+@use "/src/Style/scss/variables" as *;
+.beerList {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  margin: 20px 2vw;
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 4vw;
+    left: 48px;
+  }
+}
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 80px;
+  z-index: 9999;
+  background: url("//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif")
+    50% 50% no-repeat rgb(249, 249, 249);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.displayMsg {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  font-size: 22px;
+  color: red;
+}

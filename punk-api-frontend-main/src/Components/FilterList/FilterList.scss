@@ -1,0 +1,20 @@
+@use "/src/Style/scss/mixins" as *;
+@use "/src/Style/scss/variables" as *;
+
+.filters__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+  h4 {
+    letter-spacing: 0.2px;
+    padding-bottom: 4px;
+  }
+  p {
+    margin: 0 20px;
+  }
+}

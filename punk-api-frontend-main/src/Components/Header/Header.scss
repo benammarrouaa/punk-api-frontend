@@ -1,0 +1,24 @@
+@use "/src/Style/scss/mixins" as *;
+@use "/src/Style/scss/variables" as *;
+.header {
+  color: #f3a40f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  height: 60vh;
+  background-image: url("https://www.bestofbritishbeer.co.uk/media/catalog/product/cache/bdf8a0023a647178d416cef4d2d227f2/d/a/dark12.jpg");
+  object-fit: cover;
+  background-position: center;
+  position: relative;
+
+  h1 {
+    font-size: 3rem;
+    z-index: 1;
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+}
