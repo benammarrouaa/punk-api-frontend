@@ -3,7 +3,8 @@
 The Punk API uses the BrewDog API to display a collection of their finest drinks.
 A user can search for a particular brew they like via the searchbox, or filter the results to their liking.
 
-#Techno
+#Techno:
+
 This site uses the following languages, principles & softwares:
 
 Functional React
